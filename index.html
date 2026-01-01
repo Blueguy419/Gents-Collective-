@@ -505,3 +505,145 @@
   </script>
 </body>
 </html>
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gents Collective</title>
+  <meta name="description" content="Gents Collective — modern streetwear. Oversized tees, baggy jeans, heavy hoodies." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Gents Collective</a>
+
+    <nav class="nav">
+      <a href="shop.html">Shop</a>
+      <a href="bio.html">Bio</a>
+      <a href="payment.html" class="pill">Payment</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Change theme">
+        Theme: <span id="themeLabel">Dark</span>
+      </button>
+      <a class="pill ghost" href="https://instagram.com/Brentgocraze" target="_blank" rel="noreferrer">@Brentgocraze</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="kicker">STREETWEAR • CLEAN • NEAT</div>
+        <h1>Minimal pieces. Heavy quality. Everyday fit.</h1>
+        <p class="muted">
+          Oversized Tees • Baggy Jeans • Heavy Oversized Hoodies — black/white/greens, light/dark washes.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="shop.html">Shop Collection</a>
+          <a class="btn ghost" href="bio.html">What “Gents” means</a>
+        </div>
+
+        <div class="micro muted">Holiday sale: <strong>10% OFF</strong> applied at checkout (demo).</div>
+      </div>
+
+      <div class="hero-media">
+        <img src="assets/hero.jpg" alt="Gents Collective streetwear" onerror="this.src='https://picsum.photos/1200/900?grayscale';" />
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="strip-item">
+        <div class="strip-title">Oversized Tee</div>
+        <div class="strip-sub muted">Black • White • Green</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-title">Baggy Jeans</div>
+        <div class="strip-sub muted">Light • Dark • Black</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-title">Heavy Hoodie</div>
+        <div class="strip-sub muted">Black • Grey • White</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <img class="card-img" src="assets/tee-black.jpg" alt="Oversized Tee - Black" onerror="this.src='https://picsum.photos/900/900?grayscale&random=11';"/>
+        <div class="card-body">
+          <div class="card-top">
+            <div>
+              <div class="card-title">Oversized Tee</div>
+              <div class="muted">Black / White / Green</div>
+            </div>
+            <div class="price">$38</div>
+          </div>
+          <a class="btn small" href="shop.html#tees">View options</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="assets/jeans-light.jpg" alt="Baggy Jeans - Light Wash" onerror="this.src='https://picsum.photos/900/900?grayscale&random=22';"/>
+        <div class="card-body">
+          <div class="card-top">
+            <div>
+              <div class="card-title">Baggy Jeans</div>
+              <div class="muted">Light / Dark / Black</div>
+            </div>
+            <div class="price">$68</div>
+          </div>
+          <a class="btn small" href="shop.html#jeans">View options</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="assets/hoodie-black.jpg" alt="Heavy Oversized Hoodie - Black" onerror="this.src='https://picsum.photos/900/900?grayscale&random=33';"/>
+        <div class="card-body">
+          <div class="card-top">
+            <div>
+              <div class="card-title">Heavy Hoodie</div>
+              <div class="muted">Black / Grey / White</div>
+            </div>
+            <div class="price">$88</div>
+          </div>
+          <a class="btn small" href="shop.html#hoodies">View options</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-inner">
+        <div>
+          <div class="brand small">Gents Collective</div>
+          <div class="muted">Modern streetwear — simple, clean, neat.</div>
+        </div>
+        <div class="footer-links">
+          <a href="shop.html">Shop</a>
+          <a href="bio.html">Bio</a>
+          <a href="payment.html">Payment</a>
+        </div>
+      </div>
+      <div class="copyright muted">© <span id="year"></span> Gents Collective</div>
+    </section>
+  </main>
+
+  <!-- Holiday popup -->
+  <div class="modal" id="saleModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Holiday sale">
+      <button class="modal-x" id="closeModal" aria-label="Close">✕</button>
+      <div class="modal-kicker">HOLIDAY SALE</div>
+      <h2>Get 10% off today</h2>
+      <p class="muted">Use code <strong>GENTS10</strong> at checkout.</p>
+      <div class="modal-row">
+        <a class="btn" href="shop.html">Shop now</a>
+        <button class="btn ghost" id="noThanks" type="button">No thanks</button>
+      </div>
+      <div class="muted tiny">This is a demo popup. You can change the code text in <code>script.js</code>.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
